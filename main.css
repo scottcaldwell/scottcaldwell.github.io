@@ -1,0 +1,42 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+nav{
+  display:flex;
+  align-items:center;
+  width: 100%;
+  background: #eee;
+  padding: 20px;
+  font-family: 'Helvetica';
+
+}
+
+nav #name{
+
+}
+
+nav #name h1{
+  font-size: 2em;
+  font-style: italic;
+}
+
+nav #name h2{
+  font-size: 1em;
+}
+
+.link{
+  padding:0 20px;
+}
+
+.link label{
+  text-align:center;
+}
+
