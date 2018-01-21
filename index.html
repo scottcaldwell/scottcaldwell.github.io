@@ -2,55 +2,205 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script type="text/javascript" src="main.js"></script>
-    <script src="https://use.fontawesome.com/162abbfb12.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title id="title">Scott Caldwell</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="devicon.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 
 <body>
-    <nav>
-        <div id="name">
-            <h1>scott caldwell</h1>
-            <h2>web developer</h2>
+    <section class="hero is-fullheight" id="intro">
+        <canvas id="canvas"></canvas>
+        <div class="hero-head">
+            <nav class="navbar is-white">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <h1>Scott Caldwell</h1>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="#skills" class="navbar-item is-active">
+                                Skills
+                            </a>
+                            <a href="#projects" class="navbar-item">
+                                Projects
+                            </a>
+                            <a class="navbar-item" href="ScottCaldwellResume.pdf" target="_blank">
+                                <span class="icon">
+                                    <i class="fa fa-download"></i>
+                                </span>
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="link">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-            <label>resume</label>
-        </div>
-        <div class="link">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <label>github</label>
-        </div>
-        <div class="link">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            <label>email</label>
-        </div>
-        <div class="link">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <label>phone</label>
-        </div>
-    </nav>
-<!--     <section>
-        selected works
-        <div class="project" id="syncline">
-            <div class="text-section">
-                <h1>Syncline</h1>
-                <i class="fa fa-external-link" aria-hidden="true"></i>
-                <p>
-                    Syncline is a sample app built for the final project at Lighthouse Labs. A tool aimed at geotechnical engineers to streamline the process of collecting, reviewing and approving site investigation information. Sign in to the app with username: 'scottc.caldwell@gmail.com', password: 'password'
-                <p>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Web Developer
+                </h1>
+                <h2 class="subtitle">
+                    Vancouver, BC
+                </h2>
             </div>
-            <div class="tech-stack">
-            </div>
-
         </div>
+    </section>
 
+    <section id="skills">
+        <div class="container has-text-centered is-widescreen">
+            <h1 class="title">Skills</h1>
+            <hr>
+            <div class="columns is-centered">
+                <div class="column is-two-thirds">
+                    <h2 class="subtitle">Frontend</h2>
+                    <ul>
+                        <li class="is-inline-flex">
+                            <i class="devicon-javascript-plain-wordmark"></i>
+                        </li>
+                        <li class="is-inline-flex">
+                            <i class="devicon-html5-plain-wordmark"></i>
+                        </li>
+                        <li class="is-inline-flex">
+                            <i class="devicon-css3-plain-wordmark"></i>
+                        </li>
+                        <li class="is-inline-flex">
+                            <i class="devicon-angularjs-plain-wordmark"></i>
+                        </li>
+                        <li class="is-inline-flex">
+                            <i class="devicon-jquery-plain-wordmark"></i>
+                        </li>
+                    </ul>
+                    <h2 class="subtitle">Backend</h2>
+                    <ul>
+                        <li class="is-inline-flex">
+                            <i class="devicon-postgresql-plain-wordmark"></i>
+                        </li>
 
+                        <li class="is-inline-flex">
+                            <i class="devicon-rails-plain-wordmark"></i>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h2 class="subtitle">Tools</h2>
+                        <li class="is-inline-flex">
+                            <i class="devicon-grunt-plain-wordmark"></i>
+                        </li>
+                        <li class="is-inline-flex">
+                            <i class="devicon-git-plain-wordmark"></i>
+                        </li>
+                        <li class="is-inline-flex">
+                            <i class="devicon-docker-plain-wordmark"></i>
 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </section> -->
+    <section id="projects">
+        <div class="container has-text-centered is-widescreen">
+            <h1 class="title">Projects</h1>
+            <hr>
+            <h2 class="subtitle">Syncline</h2>
+            <div class="columns is-centered">
+                <div class="column is-one-third">
+                </div>
+                <div class="column is-two-thirds">
+                    <figure class="image is-16x9">
+                        <img src="https://bulma.io/images/placeholders/640x360.png">
+                    </figure>
+                </div>
+            </div>
+            <h2 class="subtitle"></h2>
+            <div class="columns is-centered">
+                <div class="column is-one-third">
+                    <div class="box">
+                        <div class="content">
+                            <h2>Cameron Sparling Photography</h2>
+
+                            <div class="buttons is-centered has-addons">
+                                <a class="button">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-external-link"></i>
+                                    </span>
+                                    <span>Link</span>
+                                </a>
+                                <a class="button">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-code"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                            <p class="has-text-left">A responsive portfolio made for fashion photographer Cameron Sparling. This project taught me
+                                about UI/UX, hosting with Amazon S3, setting up an email, designing for a client, SEO and
+                                responsive design.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">AngularJS</span>
+                            <span class="tag">Amazon S3</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-two-thirds">
+                    <figure class="image is-16x9">
+                        <img src="https://bulma.io/images/placeholders/640x360.png">
+                    </figure>
+                </div>
+            </div>
+            <h2 class="subtitle">NHL Recap</h2>
+            <div class="columns is-centered">
+                <div class="column is-one-third">
+                </div>
+                <div class="column is-two-thirds">
+                    <figure class="image is-16x9">
+                        <img src="https://bulma.io/images/placeholders/640x360.png">
+                    </figure>
+                </div>
+            </div>
+            <h2 class="subtitle">Pomodoro</h2>
+            <div class="columns is-centered">
+                <div class="column is-one-third">
+                </div>
+                <div class="column is-two-thirds">
+                    <figure class="image is-16x9">
+                        <img src="https://bulma.io/images/placeholders/640x360.png">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a>Scott Caldwell</a> Add links to github, stack overflow, etc
+                </p>
+            </div>
+            <a href="https://bulma.io">
+                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+            </a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 
