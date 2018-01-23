@@ -51,12 +51,10 @@ function createTrapezoid(initX, initY) {
 //loop
 //create row of shapes, with similar opacity range
 
-
-
 //Image galleries
 var allImages = {
     csImagesArray : ["cameronsparling_grid.png", "cameronsparling_full.png", "cameronsparling_contact.png", "cameronsparling_mobile.png"],
-    nhlImagesArray : ["nhlrecap_full.png", "nhlrecap_hidden.png", "nhlrecap_mobile.png", "nhlrecap_modal.png"],
+    nhlImagesArray : ["nhlrecap_full.png", "nhlrecap_hidden.png", "nhlrecap_modal.png"],
     pomoImagesArray : ["pomo_init.png", "pomo_additional_time.png"],
     syncImagesArray : ["syncline_login.png", "syncline_landing.png", "syncline_sites.png", "syncline_location.png", "syncline_drill_hole.png"]
 }
