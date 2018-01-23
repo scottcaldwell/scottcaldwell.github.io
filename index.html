@@ -31,18 +31,20 @@
                     </div>
                     <div id="navbarMenuHeroA" class="navbar-menu">
                         <div class="navbar-end">
-                            <a href="#skills" class="navbar-item is-active">
+                            <a href="#skills" class="navbar-item">
                                 Skills
                             </a>
                             <a href="#projects" class="navbar-item">
                                 Projects
                             </a>
-                            <a class="navbar-item" href="ScottCaldwellResume.pdf" target="_blank">
-                                <span class="icon">
-                                    <i class="fa fa-download"></i>
-                                </span>
-                                Resume
-                            </a>
+                            <span class="navbar-item">
+                                <a class="button is-inverted" href="ScottCaldwellResume.pdf" target="_blank">
+                                    <span class="icon">
+                                        <i class="fa fa-download"></i>
+                                    </span>
+                                    <span>Resume</span>
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -54,6 +56,9 @@
                     Web Developer
                 </h1>
                 <h2 class="subtitle">
+                    <span class="icon is-small">
+                        <i class="fa fa-map-marker"></i>
+                    </span>
                     Vancouver, BC
                 </h2>
             </div>
@@ -65,7 +70,7 @@
             <h1 class="title">Skills</h1>
             <hr>
             <div class="columns is-centered">
-                <div class="column is-two-thirds">
+                <div class="column is-three-fifths">
                     <h2 class="subtitle">Frontend</h2>
                     <ul>
                         <li class="is-inline-flex">
@@ -116,27 +121,75 @@
         <div class="container has-text-centered is-widescreen">
             <h1 class="title">Projects</h1>
             <hr>
-            <h2 class="subtitle">Syncline</h2>
             <div class="columns is-centered">
-                <div class="column is-one-third">
+                <div class="column is-two-fifths">
+                    <div class="box">
+                        <div class="content">
+                            <h2>Syncline</h2>
+                            <div class="buttons is-centered has-addons">
+                                <a class="button" href="http://syncline.herokuapp.com/" target="_blank">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-external-link-alt"></i>
+                                    </span>
+                                    <span>Link</span>
+                                </a>
+                                <a class="button" href="https://github.com/scottcaldwell/Syncline" target="_blank">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-code"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                            <p class="has-text-left">A tool aimed at geotechnical engineers to streamline the process of collecting, reviewing and
+                                approving site investigation information. This is an early proof of concept developed as
+                                a final project at Lighthouse Labs. This was a team project developed over the course of
+                                two weeks. This project taught me about designing a database schema, writing detailed user
+                                stories, creating a secure app with Ruby on Rails, JavaScript animations, git branching in
+                                a team environment, and using external APIs.
+                            </p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Ruby on Rails</span>
+                            <span class="tag">Javascript</span>
+                            <span class="tag">JQuery</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Mapbox</span>
+                            <span class="tag">Handlebars.js</span>
+                            <span class="tag">HTML Canvas</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="column is-two-thirds">
-                    <figure class="image is-16x9">
-                        <img src="https://bulma.io/images/placeholders/640x360.png">
-                    </figure>
+                <div class="column is-three-fifths">
+                    <div class="columns">
+                        <div class="column is-narrow image-switch prev-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-left"></i>
+                            </span>
+                        </div>
+                        <div class="column">
+                            <figure class="image is-narrow6x9">
+                                <img id="syncImages" data-index="0" src="img/syncline_login.png">
+                            </figure>
+                        </div>
+                        <div class="column is-narrow image-switch next-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h2 class="subtitle"></h2>
             <div class="columns is-centered">
-                <div class="column is-one-third">
+                <div class="column is-two-fifths">
                     <div class="box">
                         <div class="content">
                             <h2>Cameron Sparling Photography</h2>
-
                             <div class="buttons is-centered has-addons">
-                                <a class="button">
+                                <a class="button" href="http://cameronsparling.com" target="_blank">
                                     <span class="icon is-small">
-                                        <i class="fa fa-external-link"></i>
+                                        <i class="fa fa-external-link-alt"></i>
                                     </span>
                                     <span>Link</span>
                                 </a>
@@ -155,33 +208,131 @@
                             <span class="tag">AngularJS</span>
                             <span class="tag">Amazon S3</span>
                             <span class="tag">SEO</span>
+                            <span class="tag">Responsive Design</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">Flexbox</span>
                         </div>
                     </div>
                 </div>
-                <div class="column is-two-thirds">
-                    <figure class="image is-16x9">
-                        <img src="https://bulma.io/images/placeholders/640x360.png">
-                    </figure>
+                <div class="column is-three-fifths">
+                    <div class="columns">
+                        <div class="column is-narrow image-switch prev-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-left"></i>
+                            </span>
+                        </div>
+                        <div class="column">
+                            <figure class="image is-narrow6x9">
+                                <img id="csImages" data-index="0" src="img/cameronsparling_grid.png">
+                            </figure>
+                        </div>
+                        <div class="column is-narrow image-switch next-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h2 class="subtitle">NHL Recap</h2>
             <div class="columns is-centered">
-                <div class="column is-one-third">
+                <div class="column is-two-fifths">
+                    <div class="box">
+                        <div class="content">
+                            <h2>NHL Recap</h2>
+                            <div class="buttons is-centered has-addons">
+                                <a class="button">
+                                    <span class="icon is-small" href="http://nhlrecap.com" target="_blank">
+                                        <i class="fa fa-external-link-alt"></i>
+                                    </span>
+                                    <span>Link</span>
+                                </a>
+                                <a class="button">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-code"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                            <p class="has-text-left">A simple app that pulls scores and video highlights from the NHL API. This project taught me
+                                about templating with Handlebars.js, querying an external API, responsive design, and hosting
+                                on AWS. with AWS. </p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JQuery</span>
+                            <span class="tag">Handlebars.js</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="column is-two-thirds">
-                    <figure class="image is-16x9">
-                        <img src="https://bulma.io/images/placeholders/640x360.png">
-                    </figure>
+                <div class="column is-three-fifths">
+                    <div class="columns">
+                        <div class="column is-narrow image-switch prev-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-left"></i>
+                            </span>
+                        </div>
+                        <div class="column">
+                            <figure class="image is-narrow6x9">
+                                <img id="nhlImages" data-index="0" src="img/nhlrecap_full.png">
+                            </figure>
+                        </div>
+                        <div class="column is-narrow image-switch next-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h2 class="subtitle">Pomodoro</h2>
             <div class="columns is-centered">
-                <div class="column is-one-third">
+                <div class="column is-two-fifths">
+                    <div class="box">
+                        <div class="content">
+                            <h2>Pomodoro Timer</h2>
+                            <div class="buttons is-centered has-addons">
+                                <a class="button">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-external-link-alt"></i>
+                                    </span>
+                                    <span>Link</span>
+                                </a>
+                                <a class="button">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-code"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                            <p class="has-text-left">A simple Pomodoro timer, to help with productivity. This app taught me about writing 'classes'
+                                in JavaScript, gradients in CSS, and responsive design. </p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Vanilla Javascript</span>
+                            <span class="tag">CSS without Library</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="column is-two-thirds">
-                    <figure class="image is-16x9">
-                        <img src="https://bulma.io/images/placeholders/640x360.png">
-                    </figure>
+                <div class="column is-three-fifths">
+                    <div class="columns">
+                        <div class="column is-narrow image-switch prev-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-left"></i>
+                            </span>
+                        </div>
+                        <div class="column">
+                            <figure class="image is-narrow6x9 is-inline-block">
+                                <img id="pomoImages" data-index="0" src="img/pomo_init.png">
+                            </figure>
+                        </div>
+                        <div class="column is-narrow image-switch next-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
