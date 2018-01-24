@@ -18,11 +18,8 @@ canvas{
   flex-direction: column;
   margin: 5px;
   padding:10px;
-  cursor: pointer;
 }
-#skills li:hover span{
-  text-decoration: underline;
-}
+
 #skills li i{
   font-size:6em;
 }
@@ -30,7 +27,9 @@ canvas{
   height:96px;
   width: 96px;
 }
-.grayscale { filter: grayscale(100%); }
+.grayscale { 
+  filter: grayscale(100%); 
+}
 
 #skills ul{
   margin-bottom: 20px;
@@ -43,4 +42,35 @@ canvas{
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+#projects .box{
+  border-radius: 0;
+}
+
+#projects .columns{
+  margin-bottom:30px;
+}
+
+#portrait{
+  max-height:14em;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+}
+
+#intro{
+  background: radial-gradient(at top left,#7a7a7a, #fff 60%);
+}
+
+#footer .icon{
+  margin:10px;
+}
+
+#footer .icon i{
+  font-size:2em;
+}
+
+.hidden-note{
+  display: none;
 }

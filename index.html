@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title id="title">Scott Caldwell</title>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <!-- <link rel="stylesheet" type="text/css" href="devicon.css"> -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
@@ -21,22 +19,25 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <a class="navbar-item">
-                            <h1>Scott Caldwell</h1>
+                            <h1 class="is-size-4">Scott Caldwell</h1>
                         </a>
-                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
                     </div>
-                    <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-menu is-hidden-mobile">
                         <div class="navbar-end">
                             <a href="#skills" class="navbar-item">
                                 Skills
                             </a>
                             <a href="#projects" class="navbar-item">
-                                Projects
+                                Experience
                             </a>
+                            <span class="navbar-item">
+                                <a class="button is-inverted" href="mailto:ScottC.Caldwell@gmail.com" target="_top">
+                                    <span class="icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                    <span>Email</span>
+                                </a>
+                            </span>
                             <span class="navbar-item">
                                 <a class="button is-inverted" href="ScottCaldwellResume.pdf" target="_blank">
                                     <span class="icon">
@@ -52,6 +53,7 @@
         </div>
         <div class="hero-body">
             <div class="container has-text-centered">
+                <img src="img/beard.jpg" id="portrait">
                 <h1 class="title">
                     Web Developer
                 </h1>
@@ -61,11 +63,20 @@
                     </span>
                     Vancouver, BC
                 </h2>
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <p class="has-text-left" id="about-me">Hello! I'm a fullstack developer that loves
+                            problem solving through coding and design for the web. I focus on creating
+                            user experiences so simple my mom can use them. One of the things I love most about
+                            web development is how much there will always be to learn.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="skills">
+    <section class="section" id="skills">
         <div class="container has-text-centered is-widescreen">
             <h1 class="title">Toolkit</h1>
             <hr>
@@ -117,22 +128,22 @@
                             <span>Docker</span>
                         </li>
                         <li class="is-flex">
-                            <img src="vagrant_logo.png" class="grayscale">
+                            <img src="img/vagrant_logo.png" class="grayscale">
                             <span>Vagrant</span>
                         </li>
                         <li class="is-flex">
-                            <img src="jira_logo.svg" class="grayscale">
+                            <img src="img/jira_logo.svg" class="grayscale">
                             <span>Jira</span>
                         </li>
                         <li class="is-flex">
-                            <img src="linux_shell_logo.png" class="grayscale">
+                            <img src="img/linux_shell_logo.png" class="grayscale">
                             <span>Linux Shell</span>
                         </li>
                         <li class="is-flex">
-                                <i class="devicon-amazonwebservices-original"></i>
-                                <span>AWS</span>
-                            </li>
-                        
+                            <i class="devicon-amazonwebservices-original"></i>
+                            <span>AWS</span>
+                        </li>
+
 
                     </ul>
                     <p></p>
@@ -141,10 +152,112 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section class="section" id="projects">
         <div class="container has-text-centered is-widescreen">
-            <h1 class="title">Projects</h1>
+            <h1 class="title">Experience</h1>
             <hr>
+            <div class="columns is-centered">
+                <div class="column is-two-fifths">
+                    <div class="box">
+                        <div class="content">
+                            <h2>RewardStream</h2>
+                            <p class="has-text-left">I worked as a Junior Developer at RewardStream, a referral marketing SaaS company. I had the
+                                opportunity to design and implement client-side features on a team of developers in an agile
+                                development environment. I researched, designed and implemented a client onboarding tool
+                                using AngularJS and Bootstrap. I updated Shopify, Magento and WooCommerce extensions to support
+                                new features alongside our Java RESTful API. I implemented an analytics dashboard(Periscope)
+                                with SQL queries. I updated existing client management portal PHP code to a SPA using AngularJS.
+                                I identified, triaged and fixed bugs on the backend, user-facing and client-facing product.
+                            </p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">AngularJS</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">RESTful API</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Periscope</span>
+                            <span class="tag">Handlebars.js</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">JIRA</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-three-fifths">
+                    <div class="columns is-mobile">
+                        <div class="column is-narrow image-switch prev-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-left"></i>
+                            </span>
+                        </div>
+                        <div class="column">
+                            <figure class="image is-narrow6x9">
+                                <img id="rsImages" data-index="0" src="img/rs_onboarding.png">
+                            </figure>
+                        </div>
+                        <div class="column is-narrow image-switch next-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-two-fifths">
+                    <div class="box">
+                        <div class="content">
+                            <h2>Cameron Sparling Photography</h2>
+                            <div class="buttons is-centered has-addons">
+                                <a class="button" href="http://cameronsparling.com" target="_blank">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-external-link-alt"></i>
+                                    </span>
+                                    <span>Link</span>
+                                </a>
+                                <a class="button" onclick="showNote(this)">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-code"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                            <p class="is-size-7 hidden-note">Check source in Link, code not obfuscated.</p>
+                            <p class="has-text-left">A responsive portfolio made for fashion photographer Cameron Sparling. This project taught me
+                                about UI/UX, hosting with Amazon S3, setting up a private email, designing for a client,
+                                SEO and responsive design.</p>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">AngularJS</span>
+                            <span class="tag">Amazon S3</span>
+                            <span class="tag">SEO</span>
+                            <span class="tag">Responsive Design</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">Flexbox</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-three-fifths">
+                    <div class="columns is-mobile">
+                        <div class="column is-narrow image-switch prev-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-left"></i>
+                            </span>
+                        </div>
+                        <div class="column">
+                            <figure class="image is-narrow6x9">
+                                <img id="csImages" data-index="0" src="img/cameronsparling_grid.png">
+                            </figure>
+                        </div>
+                        <div class="column is-narrow image-switch next-image">
+                            <span class="icon is-small">
+                                <i class="fa fa-chevron-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="columns is-centered">
                 <div class="column is-two-fifths">
                     <div class="box">
@@ -186,7 +299,7 @@
                     </div>
                 </div>
                 <div class="column is-three-fifths">
-                    <div class="columns">
+                    <div class="columns is-mobile">
                         <div class="column is-narrow image-switch prev-image">
                             <span class="icon is-small">
                                 <i class="fa fa-chevron-left"></i>
@@ -209,75 +322,22 @@
                 <div class="column is-two-fifths">
                     <div class="box">
                         <div class="content">
-                            <h2>Cameron Sparling Photography</h2>
-                            <div class="buttons is-centered has-addons">
-                                <a class="button" href="http://cameronsparling.com" target="_blank">
-                                    <span class="icon is-small">
-                                        <i class="fa fa-external-link-alt"></i>
-                                    </span>
-                                    <span>Link</span>
-                                </a>
-                                <a class="button">
-                                    <span class="icon is-small">
-                                        <i class="fa fa-code"></i>
-                                    </span>
-                                    <span>Code</span>
-                                </a>
-                            </div>
-                            <p class="has-text-left">A responsive portfolio made for fashion photographer Cameron Sparling. This project taught me
-                                about UI/UX, hosting with Amazon S3, setting up a private email, designing for a client,
-                                SEO and responsive design.</p>
-                        </div>
-                        <div class="tags">
-                            <span class="tag">AngularJS</span>
-                            <span class="tag">Amazon S3</span>
-                            <span class="tag">SEO</span>
-                            <span class="tag">Responsive Design</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">HTML</span>
-                            <span class="tag">Flexbox</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-three-fifths">
-                    <div class="columns">
-                        <div class="column is-narrow image-switch prev-image">
-                            <span class="icon is-small">
-                                <i class="fa fa-chevron-left"></i>
-                            </span>
-                        </div>
-                        <div class="column">
-                            <figure class="image is-narrow6x9">
-                                <img id="csImages" data-index="0" src="img/cameronsparling_grid.png">
-                            </figure>
-                        </div>
-                        <div class="column is-narrow image-switch next-image">
-                            <span class="icon is-small">
-                                <i class="fa fa-chevron-right"></i>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="columns is-centered">
-                <div class="column is-two-fifths">
-                    <div class="box">
-                        <div class="content">
                             <h2>NHL Recap</h2>
                             <div class="buttons is-centered has-addons">
-                                <a class="button">
-                                    <span class="icon is-small" href="http://nhlrecap.com" target="_blank">
+                                <a class="button" href="http://nhlrecap.com" target="_blank">
+                                    <span class="icon is-small">
                                         <i class="fa fa-external-link-alt"></i>
                                     </span>
                                     <span>Link</span>
                                 </a>
-                                <a class="button">
+                                <a class="button" onclick="showNote(this)">
                                     <span class="icon is-small">
                                         <i class="fa fa-code"></i>
                                     </span>
                                     <span>Code</span>
                                 </a>
                             </div>
+                            <p class="is-size-7 hidden-note">Check source in Link, code not obfuscated.</p>
                             <p class="has-text-left">A simple app that pulls scores and video highlights from the NHL API. This project taught me
                                 about templating with Handlebars.js, querying an external API, responsive design, and hosting
                                 on AWS. with AWS. </p>
@@ -291,7 +351,7 @@
                     </div>
                 </div>
                 <div class="column is-three-fifths">
-                    <div class="columns">
+                    <div class="columns is-mobile">
                         <div class="column is-narrow image-switch prev-image">
                             <span class="icon is-small">
                                 <i class="fa fa-chevron-left"></i>
@@ -316,13 +376,7 @@
                         <div class="content">
                             <h2>Pomodoro Timer</h2>
                             <div class="buttons is-centered has-addons">
-                                <a class="button">
-                                    <span class="icon is-small">
-                                        <i class="fa fa-external-link-alt"></i>
-                                    </span>
-                                    <span>Link</span>
-                                </a>
-                                <a class="button">
+                                <a class="button" href="https://bitbucket.org/caldwels/pomo" target="_blank">
                                     <span class="icon is-small">
                                         <i class="fa fa-code"></i>
                                     </span>
@@ -340,7 +394,7 @@
                     </div>
                 </div>
                 <div class="column is-three-fifths">
-                    <div class="columns">
+                    <div class="columns is-mobile">
                         <div class="column is-narrow image-switch prev-image">
                             <span class="icon is-small">
                                 <i class="fa fa-chevron-left"></i>
@@ -365,16 +419,46 @@
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <p>
-                    <a>Scott Caldwell</a> Add links to github, stack overflow, etc
-                </p>
+                <span>
+                    <a class="button is-inverted" href="mailto:ScottC.Caldwell@gmail.com" target="_top">
+                        <span class="icon">
+                            <i class="fa fa-envelope"></i>
+                        </span>
+                        <span>Email</span>
+                    </a>
+                </span>
+                <span>
+                    <a class="button is-inverted" href="ScottCaldwellResume.pdf" target="_blank">
+                        <span class="icon">
+                            <i class="fa fa-download"></i>
+                        </span>
+                        <span>Resume</span>
+                    </a>
+                </span>
+                <span>
+                    <a class="button is-inverted" href="https://github.com/scottcaldwell" target="_blank">
+                        <span class="icon">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        <span>Github</span>
+                    </a>
+                </span>
+                <span>
+                    <a class="button is-inverted" href="https://bitbucket.org/caldwels/" target="_blank">
+                        <span class="icon">
+                            <i class="fab fa-bitbucket"></i>
+                        </span>
+                        <span>Bitbucket</span>
+                    </a>
+                </span>
             </div>
-            <a href="https://bulma.io">
-                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-            </a>
+            <div class="content has-text-centered">
+                <span>
+                    © 2018 | Scott Caldwell
+                </span>
+            </div>
         </div>
     </footer>
-
     <script type="text/javascript" src="main.js"></script>
 </body>
 
