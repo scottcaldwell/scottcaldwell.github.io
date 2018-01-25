@@ -4,14 +4,11 @@ html, body {
   margin: 0px;
   box-sizing: border-box;
 }
-canvas{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-#container{
-  z-index: 1;
+#portrait{
+  max-height:20em;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
 
 #skills li{
@@ -52,16 +49,7 @@ canvas{
   margin-bottom:30px;
 }
 
-#portrait{
-  max-height:14em;
-  border-radius: 2px;
-  -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-}
 
-#intro{
-  background: radial-gradient(at top left,#7a7a7a, #fff 60%);
-}
 
 #footer .icon{
   margin:10px;
