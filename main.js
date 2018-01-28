@@ -3,9 +3,8 @@
 //Image galleries
 var allImages = {
     rsImagesArray : ["rs_onboarding.png", "rs_campaigns.png", "rs_content_editor.png", "rs_social.png"],
-    csImagesArray : ["cameronsparling_grid.png", "cameronsparling_full.png", "cameronsparling_contact.png", "cameronsparling_mobile.png"],
-    nhlImagesArray : ["nhlrecap_full.png", "nhlrecap_hidden.png", "nhlrecap_modal.png"],
-    pomoImagesArray : ["pomo_init.png", "pomo_additional_time.png"],
+    csImagesArray : ["cs_grid.png", "cs_full.png", "cs_contact.png", "cs_mobile.png"],
+    nhlImagesArray : ["nhl_full.png", "nhl_hidden.png", "nhl_modal.png"],
     syncImagesArray : ["syncline_login.png", "syncline_landing.png", "syncline_sites.png", "syncline_location.png", "syncline_drill_hole.png"]
 }
 
