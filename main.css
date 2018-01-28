@@ -4,13 +4,41 @@ html, body {
   margin: 0px;
   box-sizing: border-box;
 }
+nav, h1, h2{
+  font-family: 'Source Code Pro', monospace;
+  letter-spacing: -0.03em;
+}
+/* Landing page */
 #portrait{
   max-height:35em;
   border-radius: 2px;
   -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+  box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
 
+/* PROJECTS */
+#projects .image-switch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#projects .box{
+  border-radius: 0;
+}
+
+#projects .columns{
+  margin-bottom:30px;
+}
+#projects img{
+  user-select: none;
+}
+.hidden-note{
+  display: none;
+}
+
+/* SKILLS */
 #skills li{
   flex-direction: column;
   margin: 5px;
@@ -34,23 +62,7 @@ html, body {
   justify-content: center;
 }
 
-#projects .image-switch{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-#projects .box{
-  border-radius: 0;
-}
-
-#projects .columns{
-  margin-bottom:30px;
-}
-
-
-
+/* FOOTER */
 #footer .icon{
   margin:10px;
 }
@@ -59,6 +71,7 @@ html, body {
   font-size:2em;
 }
 
-.hidden-note{
-  display: none;
+.footer-button{
+  padding-bottom: 5px;
 }
+
