@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 
@@ -18,17 +19,21 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <div class="navbar-item">
-                            <h1 class="is-size-4 is-uppercase">Scott Caldwell</h1>
+                            <h1 class="is-size-4">Scott Caldwell</h1>
                         </div>
+                        <a class="navbar-item is-hidden-desktop" href="mailto:ScottC.Caldwell@gmail.com" target="_top">
+                            <span class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                        </a>
+                        <a class="navbar-item is-hidden-desktop" href="ScottCaldwellResume.pdf" target="_blank">
+                            <span class="icon">
+                                <i class="fa fa-file-alt"></i>
+                            </span>
+                        </a>
                     </div>
                     <div class="navbar-menu is-hidden-mobile">
                         <div class="navbar-end">
-                            <a href="#skills" class="navbar-item">
-                                Skills
-                            </a>
-                            <a href="#projects" class="navbar-item">
-                                Experience
-                            </a>
                             <span class="navbar-item">
                                 <a class="button is-inverted" href="mailto:ScottC.Caldwell@gmail.com" target="_top">
                                     <span class="icon">
@@ -40,7 +45,7 @@
                             <span class="navbar-item">
                                 <a class="button is-inverted" href="ScottCaldwellResume.pdf" target="_blank">
                                     <span class="icon">
-                                        <i class="fa fa-download"></i>
+                                        <i class="fa fa-file-alt"></i>
                                     </span>
                                     <span>Resume</span>
                                 </a>
@@ -56,18 +61,18 @@
                 <h1 class="title">
                     Web Developer
                 </h1>
-                <h2 class="subtitle">
+                <h3 class="subtitle">
                     <span class="icon is-small">
                         <i class="fa fa-map-marker"></i>
                     </span>
                     Vancouver, BC
-                </h2>
+                </h3>
                 <div class="columns is-centered">
                     <div class="column is-half">
                         <p class="has-text-left" id="about-me">
                             Hi there! I'm a fullstack developer who loves problem solving through coding and design for the web. I focus on creating
-                            user experiences so simple my mom can use them. One of the things I love most about web development
-                            is how much there always is to learn.
+                            user experiences so simple my mom can use them. What I love most about web development
+                            is that it provides endless opportunities to learn. 
                         </p>
                     </div>
                 </div>
@@ -84,13 +89,13 @@
                     <div class="box">
                         <div class="content">
                             <h2>RewardStream</h2>
-                            <p class="has-text-left">I worked as a Junior Developer at RewardStream, a referral marketing SaaS company, and had the
-                                opportunity to design and implement features on a team of developers in an agile
-                                development environment. I researched, designed and implemented a client onboarding tool
-                                using AngularJS and Bootstrap. I updated Shopify, Magento and WooCommerce extensions to support
-                                new features alongside our Java RESTful API, and implemented an analytics dashboard(Periscope)
-                                with SQL queries. I updated existing client management portal PHP code to a SPA using AngularJS.
-                                I identified, triaged and fixed bugs on the backend, user-facing and client-facing product.
+                            <p class="has-text-left is-size-7-mobile">I worked as a Junior Developer at RewardStream, a referral marketing SaaS company, and had the
+                                opportunity to design and implement features on a team of developers in an agile development
+                                environment. I researched, designed and implemented a client onboarding tool using AngularJS
+                                and Bootstrap. I updated Shopify, Magento and WooCommerce extensions to support new features
+                                alongside our Java RESTful API, and implemented an analytics dashboard(Periscope) with SQL
+                                queries. I updated existing client management portal PHP code to a SPA using AngularJS. I
+                                identified, triaged and fixed bugs on the backend, user-facing and client-facing product.
                             </p>
                         </div>
                         <div class="tags">
@@ -146,7 +151,7 @@
                                 </a>
                             </div>
                             <p class="is-size-7 hidden-note">Check source in Link, code not obfuscated.</p>
-                            <p class="has-text-left">A responsive portfolio made for fashion photographer Cameron Sparling. This project taught me
+                            <p class="has-text-left is-size-7-mobile">A responsive portfolio made for fashion photographer Cameron Sparling. This project taught me
                                 about UI/UX, hosting with Amazon S3, setting up a private email, designing for a client,
                                 SEO and responsive design.</p>
                         </div>
@@ -200,7 +205,7 @@
                                     <span>Code</span>
                                 </a>
                             </div>
-                            <p class="has-text-left">A tool aimed at geotechnical engineers to streamline the process of collecting, reviewing and
+                            <p class="has-text-left is-size-7-mobile">A tool aimed at geotechnical engineers to streamline the process of collecting, reviewing and
                                 approving site investigation information. This is an early proof of concept developed as
                                 a final project at Lighthouse Labs. This was a team project developed over the course of
                                 two weeks. This project taught me about designing a database schema, writing detailed user
@@ -372,7 +377,7 @@
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <span class="is-block-mobile">
+                <span class="is-block-mobile footer-button">
                     <a class="button is-inverted" href="mailto:ScottC.Caldwell@gmail.com" target="_top">
                         <span class="icon">
                             <i class="fa fa-envelope"></i>
@@ -380,7 +385,7 @@
                         <span>Email</span>
                     </a>
                 </span>
-                <span class="is-block-mobile">
+                <span class="is-block-mobile footer-button">
                     <a class="button is-inverted" href="ScottCaldwellResume.pdf" target="_blank">
                         <span class="icon">
                             <i class="fa fa-download"></i>
@@ -388,7 +393,7 @@
                         <span>Resume</span>
                     </a>
                 </span>
-                <span class="is-block-mobile">
+                <span class="is-block-mobile footer-button">
                     <a class="button is-inverted" href="https://github.com/scottcaldwell" target="_blank">
                         <span class="icon">
                             <i class="fab fa-github"></i>
@@ -396,7 +401,7 @@
                         <span>Github</span>
                     </a>
                 </span>
-                <span class="is-block-mobile">
+                <span class="is-block-mobile footer-button">
                     <a class="button is-inverted" href="https://bitbucket.org/caldwels/" target="_blank">
                         <span class="icon">
                             <i class="fab fa-bitbucket"></i>
