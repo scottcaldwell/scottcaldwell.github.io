@@ -1,0 +1,95 @@
+MVP
+
+
+
+CODE----------
+Mobile design
+Accessability - contrast, html semantics, color contrast
+Simple, mostly HTML/CSS, very little JS
+
+CONTENT---------
+Show off projects - Syncline, Cam, NHL, Pomo
+Image of me, short bio
+Blog -- short howtos/documentation. Jekyll, use tags. JS, CSS, HTML, Ui/UX
+
+STYLE---------
+Roboto font, or something similar. Google fonts - Source Code Pro
+Look at SaaS for developers
+
+
+Intro-------
+    Add gradient to background
+
+Skills-----
+    For each skill(html etc), write exactly WHAT exp I have with each of them
+    When you hover(or click) each skill, change description
+
+
+//Skill Descriptions
+var skillDescriptions = {
+    JavaScript: "",
+    AngularJS: "",
+    JQuery:"",
+    HTML5: "",
+    CSS3: "",
+    Bootstrap: "",
+    PostgreSQL: "",
+    "Ruby on Rails":"",
+    Grunt:"",
+    Git:"",
+    Docker:"",
+    Vagrant:"",
+    Jira:"",
+    "Linux Shell":""
+}
+    Backend
+    php
+    Sinatra
+
+    Tools 
+    Atlassian Suite
+    Terminal
+    Vagrant
+    AWS
+
+
+
+    HTML - writing semantic, readable 
+        projects left column, small blurbs about each project. List of tags of what tech was used. links to project, links to code(or
+        note that code isn't obfuscated) On right, 16x9 screenshots of project(in case user doesn't have time to go to each
+        link)
+
+
+
+
+
+https://adrifrancode.github.io/portfolio-site/
+Fixed background 
+
+https://www.harveydelaney.com/
+Toolkit - shows HTML, CSS, JS etc with nice black only icons(devicon)
+
+https://brandonmoore.co/
+Full-screen landing, with blurry background
+
+https://guanzo.io/
+Great job showing off projects
+Small bio on left, full size(scaled down) screenshots of sites on right, 
+    which you can cycle through
+
+https://hakim.se/
+Well, this site mostly works because he has way more exp.
+Simple
+
+https://www.dropbox.com/s/1z5keq8sgzz9th1/David_Weinstock_Resume.pdf?dl=0
+My resume should look this good
+
+https://jethrohazelhurst.github.io/
+This should be my main inspiration
+CSS ONLY - Supa fast
+Love the navbar
+THe background shapes are effin sweet - also the non-horizontal lines
+Nice skills tags on each project
+Direct link to resume download pdf
+
+
