@@ -1,28 +1,9 @@
-@import "base/colors";
-// @import "base/fonts";
-// @import "base/reset";
-// @import "base/typography";
+@import "partials/reset";
+@import "partials/mixins";
+@import "partials/typography";
+@import "partials/colors";
+@import "partials/header";
+@import "partials/homepage";
 
-// @import "components/boxes";
-// @import "components/blog-posts";
-// @import "components/brands";
-// @import "components/buttons";
-// @import "components/dividers";
-// @import "components/expanding-forms";
-// @import "components/inputs";
-// @import "components/lists";
-// @import "components/modals";
-// @import "components/profiles";
 
-// @import "helpers/mixins";
- 
-// @import "layout/container";
-// @import "layout/footer";
-// @import "layout/grid";
-// @import "layout/header";
-// @import "layout/hero";
-// @import "layout/off-canvas";
-// @import "layout/section";
-// @import "layout/three-quarters";
 
-// @import "pages/home";

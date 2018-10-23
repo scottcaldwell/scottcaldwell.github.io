@@ -1,57 +1,110 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
 
-var autoprefixer = require('autoprefixer');
-var browserSync = require('browser-sync').create();
-var postCss = require('gulp-postcss');
 
-gulp.task('serve', ['sass'], function() {
+const assets = {
+    dist: {
+        root: 'dist/',
+        css: 'dist/css/',
+        js: 'dist/js/',
+    },
+    src: {
+        js: 'src/js/main.js',
+        scss: 'src/sass/'
+    }
+};
 
+
+// Initial Gulp setup -----------------------------------------------
+
+// Include gulp
+const gulp = require('gulp');
+
+// Include Our Plugins
+const sass          = require('gulp-sass');
+const concat        = require('gulp-concat');
+const browserSync   = require('browser-sync');
+const postcss       = require('gulp-postcss');
+const autoprefixer  = require('autoprefixer');
+const notify        = require('gulp-notify');
+const log           = require('fancy-log');
+const plumber       = require('gulp-plumber');
+const babel         = require('gulp-babel');
+
+// Browsersync --------------------------------------------------
+gulp.task('browser-sync', function (done) {
     browserSync.init({
-        server: "./dist"
+        server: './',
+        directory: true
     });
-
-    gulp.watch("src/sass/*.scss", ['sass']);
-    gulp.watch("dist/*.html").on('change', browserSync.reload);
+    done();
 });
 
-// Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
-    return gulp.src("./src/sass/*.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("]./dist/css"))
+// Error Handling -----------------------------------------------
+var onError = (err) => {
+    log.error('An error occurred:', err.message);
+    browserSync.notify(err.message, 3000);
+    notify.onError({
+        title:      'Gulp',
+        subtitle:   '(ノಠ益ಠ)ノ彡┻━┻',
+        message:    err.message,
+        sound:      'Beep'
+    })(err);
+};
+
+// Compile Sass into build folder -------------------------------
+gulp.task('sass', () => {
+    return gulp.src(assets.src.scss + 'main.scss')
+        .pipe(plumber({errorHandler: onError}))
+        .pipe(sass({
+            includePaths: assets.src.scss
+        }))
+        .on('error', onError)
+        .pipe(postcss([
+            autoprefixer({
+                browsers: [
+                    '> 1%', 'last 2 versions'
+                ]
+            })
+        ]))
+        .pipe(gulp.dest(assets.dist.css))
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['serve']);
+// Transpile, Concatenate & Minify JS ----------------------------
+gulp.task('scripts', () => {
+    return gulp.src([
+        assets.src.js + '*.js'
+    ])
+        .pipe(babel({
+            presets: [[
+                'env', {
+                    targets: {
+                        browsers: [
+                            '> 1%', 'last 2 versions'
+                        ]
+                    }
+                }
+            ]]
+        }))
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest(assets.dist.js))
+        .pipe(browserSync.stream());
+});
 
-// // Include Our Plugins
-// var sass = require('gulp-sass');
-// var concat = require('gulp-concat');
-// var uglify = require('gulp-uglify');
-// var rename = require('gulp-rename');
+// Browsersync task ---------------------------------
+gulp.task('bs-reload', (done) => {
+    browserSync.reload();
+    done();
+});
 
-// // Compile Our Sass
-// gulp.task('sass', function() {
-//     return gulp.src('src/sass/*.scss')
-//         .pipe(sass())
-//         .pipe(gulp.dest('dist/wp-content/themes/sproutly/css'));
-// });
+// Watch task --------------------------------------
+gulp.task('watch', gulp.parallel(() => {
+    gulp.watch(assets.src.scss + 'partials/*.scss', gulp.series('sass'));
+    gulp.watch(assets.src.js + '*.js', gulp.series('scripts'));
+    gulp.watch(assets.dist.root + '/*.html', gulp.series('bs-reload'));
+}));
 
-// //Concatenate & Minify JS
-// gulp.task('scripts', function() {
-//     return gulp.src('src/js/*.js')
-//         .pipe(concat('scripts.js'))
-//         .pipe(gulp.dest('dist/wp-content/themes/sproutly/js'))
-//         .pipe(rename('sproutly.min.js'))
-//         .pipe(uglify())
-// });
+// Helper tasks
+gulp.task('code', gulp.parallel('sass', 'scripts'));
 
-// // Watch Files For Changes
-// gulp.task('watch', function() {
-//     gulp.watch('src/js/*.js', ['scripts']);
-//     gulp.watch('src/sass/**/*.scss', ['sass']);
-// });
-
-// // Default Task
-// gulp.task('default', ['sass']);
+// Default gulp task -------------------------------
+gulp.task('default', gulp.series('code', 'browser-sync', 'watch'));
