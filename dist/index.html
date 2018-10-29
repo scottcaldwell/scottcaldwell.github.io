@@ -5,68 +5,85 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title id="title">Scott Caldwell</title>
-    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sorts+Mill+Goudy" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="js/main.js" defer></script>    
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <div class="container">
-                <div class="">
-                    <div class="">
-                        <h1 class="">Scott Caldwell</h1>
-                    </div>
-                    <a class="" href="mailto:ScottC.Caldwell@gmail.com" target="_top">
-                    </a>
-                    <a class="" href="ScottCaldwellResume.pdf" target="_blank">
-                    </a>
+        <nav class="header__nav container">
+            <div class="header__nav__left">
+                <div class="logo">
+                    <a class="logo__link" href="http://scottcaldwell.github.io"><h1>Scott Caldwell</h1></a>
                 </div>
+            </div>
+            <div class="header__nav__right">
                 <div class="">
-                    <div class="">
-                        <span class="">
-                            <a class="button " href="mailto:ScottC.Caldwell@gmail.com" target="_top">
-                                <span>Email</span>
-                            </a>
-                        </span>
-                        <span class="">
-                            <a class="button" href="ScottCaldwellResume.pdf" target="_blank">
-                                <span>Resume</span>
-                            </a>
-                        </span>
-                    </div>
+                    <span class="">
+                        <a class="button " href="mailto:ScottC.Caldwell@gmail.com" target="_top">
+                            <span>Email</span>
+                        </a>
+                    </span>
+                    <span class="">
+                        <a class="button" href="ScottCaldwellResume.pdf" target="_blank">
+                            <span>Resume</span>
+                        </a>
+                    </span>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="hero">
-        <div class="">
-            <img src="img/portrait.jpg" alt>
-            <h1 class="">
+    <section class="hero" id="tilt">
+        <div class="hero__content">
+            <h1 class="hero__title">
                 Front End Web Developer
             </h1>
-            <h3 class="">
+            <div class="hero__subtitle">
                 <span class="icon is-small">
                     <i class="fa fa-map-marker"></i>
                 </span>
-                Vancouver, BC
-            </h3>
-            <div class="">
-                <div class="">
-                    <p class="" id="about-me">
-                        Hi there! I'm a fullstack developer who loves problem solving through coding and design for the web. I focus on creating
-                        user experiences so simple my mom can use them. What I love most about web development
-                        is that it provides endless opportunities to learn. 
-                    </p>
-                </div>
+                <h3>Vancouver, BC</h3>
+            </div>
+            <div class="hero__bio">
+                <p class="" id="about-me">
+                    Rewrite this or leave out completely
+                </p>
             </div>
         </div>
+        <img class="hero__image" src="img/portrait.jpg" alt>
     </section>
     <section class="" id="projects">
         <div class="container">
             <h1 class="">Experience</h1>
             <hr>
+            <div class="">
+                    <div class="">
+                        <div class="">
+                            <div class="">
+                                <h2>Redstamp Digital Agency</h2>
+                                <p class="has-text-left is-size-7-mobile">
+                                </p>
+                            </div>
+                            <div class="tags">
+                                <span class="tag">Wordpress</span>
+                                <span class="tag">SASS</span>
+                                <span class="tag">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="">
+                            <div class="">
+                                <figure class="">
+                                    <img id="rsImages" data-index="0" src="img/rs_onboarding.png">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div class="">
                 <div class="">
                     <div class="">
@@ -317,7 +334,6 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>

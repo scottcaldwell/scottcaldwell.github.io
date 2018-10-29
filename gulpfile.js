@@ -7,7 +7,7 @@ const assets = {
         js: 'dist/js/',
     },
     src: {
-        js: 'src/js/main.js',
+        js: 'src/js/',
         scss: 'src/sass/'
     }
 };
@@ -100,7 +100,7 @@ gulp.task('bs-reload', (done) => {
 gulp.task('watch', gulp.parallel(() => {
     gulp.watch(assets.src.scss + 'partials/*.scss', gulp.series('sass'));
     gulp.watch(assets.src.js + '*.js', gulp.series('scripts'));
-    gulp.watch(assets.dist.root + '/*.html', gulp.series('bs-reload'));
+    gulp.watch(assets.dist.root + '*.html', gulp.series('bs-reload'));
 }));
 
 // Helper tasks
