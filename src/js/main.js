@@ -1,5 +1,30 @@
 'use strict';
 
+// var mySwiper = new Swiper ('.swiper-container', {
+//     // Optional parameters
+//     // direction: 'vertical',
+//     preloadImages: false,
+//     // Enable lazy loading
+//     lazy: true,
+
+//     loop: true,
+
+//     // And if we need scrollbar
+//     scrollbar: {
+//         el: '.swiper-scrollbar',
+//     },
+// })
+
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+//   cellAlign: 'center',
+//   contain: true,
+  prevNextButtons: false,
+//   fullScreen: true
+});
+
+
 let captureMouse = function (element) {
   let mouse = {x: 0, y: 0, event: null},
       body_scrollLeft = document.body.scrollLeft,
