@@ -6,13 +6,11 @@
     <title id="title">Scott Caldwell</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sorts+Mill+Goudy" rel="stylesheet">
-    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <script src="js/main.js" defer></script>   
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script src="js/main.js" defer></script>   
 </head>
 
 <body>
@@ -24,22 +22,22 @@
                 </div>
             </div>
             <div class="header__nav__right">
-                <div class="">
-                    <span class="">
-                        <a class="button " href="mailto:ScottC.Caldwell@gmail.com" target="_top">
-                            <span>Email</span>
-                        </a>
-                    </span>
-                    <span class="">
-                        <a class="button" href="ScottCaldwellResume.pdf" target="_blank">
-                            <span>Resume</span>
-                        </a>
-                    </span>
-                </div>
+                <span class="header__link">
+                    <a class="button " href="mailto:ScottC.Caldwell@gmail.com" target="_top">
+                        <h5>Email</h5>
+                    </a>
+                </span>
+                <span class="header__link">
+                    <a class="button" href="ScottCaldwellResume.pdf" target="_blank">
+                        <h5>Resume</h5>
+                    </a>
+                </span>
             </div>
         </nav>
     </header>
+    <div class="fade"></div>
     <section class="hero" id="tilt">
+        <canvas id="hero__background"></canvas>
         <div class="hero__content">
             <h1 class="hero__title">
                 Front End Web Developer
@@ -58,165 +56,163 @@
         </div>
         <img class="hero__image" src="img/portrait.jpg" alt>
     </section>
-    <section class="" id="projects">
-        <div class="container">
-            <h1 class="">Experience</h1>
-            <hr>
+    <section class="exp-container container">
+        <h1 class="">Experience</h1>
+        <hr>
+        <div class="exp">
+                <div class="exp__intro">
+                    <h2 class="exp__header">Redstamp Digital Agency</h2>
+                    <p class="class="exp__subheader>
+                    </p>
+                </div>
+                <div class="exp__tags">
+                    <span">Wordpress</span>
+                    <span>SASS</span>
+                    <span>PHP</span>
+                </div>
+                <div class="main-carousel">
+                    <div class="carousel-cell">
+                        <img src="images/galleries/cs_grid.png">
+                        <!-- <div class="swiper-lazy-preloader"></div> -->
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/galleries/cs_full.png">
+                        <!-- <div class="swiper-lazy-preloader"></div> -->
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/galleries/cs_mobile.png">
+                        <!-- <div class="swiper-lazy-preloader"></div> -->
+                    </div>
+                </div>
+            </div>
+        <div class="">
             <div class="">
+                <div class="">
                     <div class="">
-                        <h2>Redstamp Digital Agency</h2>
-                        <p class="has-text-left is-size-7-mobile">
+                        <h2>RewardStream</h2>
+                        <p class="has-text-left is-size-7-mobile">I worked as a Junior Developer at RewardStream, a referral marketing SaaS company, and had the
+                            opportunity to design and implement features on a team of developers in an agile development
+                            environment. I researched, designed and implemented a client onboarding tool using AngularJS
+                            and Bootstrap. I updated Shopify, Magento and WooCommerce extensions to support new features
+                            alongside our Java RESTful API, and implemented an analytics dashboard(Periscope) with SQL
+                            queries. I updated existing client management portal PHP code to a SPA using AngularJS. I
+                            identified, triaged and fixed bugs on the backend, user-facing and client-facing product.
                         </p>
                     </div>
                     <div class="tags">
-                        <span class="tag">Wordpress</span>
-                        <span class="tag">SASS</span>
+                        <span class="tag">AngularJS</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">RESTful API</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Periscope</span>
+                        <span class="tag">Handlebars.js</span>
                         <span class="tag">PHP</span>
-                    </div>
-                    <div class="main-carousel">
-                        <div class="carousel-cell">
-                            <img src="images/galleries/cs_grid.png">
-                            <!-- <div class="swiper-lazy-preloader"></div> -->
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="images/galleries/cs_full.png">
-                            <!-- <div class="swiper-lazy-preloader"></div> -->
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="images/galleries/cs_mobile.png">
-                            <!-- <div class="swiper-lazy-preloader"></div> -->
-                        </div>
-                    </div>
-                </div>
-            <div class="">
-                <div class="">
-                    <div class="">
-                        <div class="">
-                            <h2>RewardStream</h2>
-                            <p class="has-text-left is-size-7-mobile">I worked as a Junior Developer at RewardStream, a referral marketing SaaS company, and had the
-                                opportunity to design and implement features on a team of developers in an agile development
-                                environment. I researched, designed and implemented a client onboarding tool using AngularJS
-                                and Bootstrap. I updated Shopify, Magento and WooCommerce extensions to support new features
-                                alongside our Java RESTful API, and implemented an analytics dashboard(Periscope) with SQL
-                                queries. I updated existing client management portal PHP code to a SPA using AngularJS. I
-                                identified, triaged and fixed bugs on the backend, user-facing and client-facing product.
-                            </p>
-                        </div>
-                        <div class="tags">
-                            <span class="tag">AngularJS</span>
-                            <span class="tag">Bootstrap</span>
-                            <span class="tag">RESTful API</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Periscope</span>
-                            <span class="tag">Handlebars.js</span>
-                            <span class="tag">PHP</span>
-                            <span class="tag">JIRA</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="">
-                        <div class="">
-                            <figure class="">
-                                <img id="rsImages" data-index="0" src="img/rs_onboarding.png">
-                            </figure>
-                        </div>
+                        <span class="tag">JIRA</span>
+                        <span class="tag">CSS</span>
                     </div>
                 </div>
             </div>
             <div class="">
                 <div class="">
                     <div class="">
-                        <div class="">
-                            <h2>Cameron Sparling Photography</h2>
-                            <div class="">
-                                <a class="button" href="http://cameronsparling.com" target="_blank">
-                                    <span class="icon">
-                                        <i class="fa fa-external-link-alt"></i>
-                                    </span>
-                                    <span>Link</span>
-                                </a>
-                                <a class="button" onclick="showNote(this)">
-                                    <span class="icon">
-                                        <i class="fa fa-code"></i>
-                                    </span>
-                                    <span>Code</span>
-                                </a>
-                            </div>
-                            <p class="">Check source in Link, code not obfuscated.</p>
-                            <p class="">A responsive portfolio made for fashion photographer Cameron Sparling. This project taught me
-                                about UI/UX, hosting with Amazon S3, setting up a private email, designing for a client,
-                                SEO and responsive design.</p>
-                        </div>
-                        <div class="tags">
-                            <span class="tag">AngularJS</span>
-                            <span class="tag">Amazon S3</span>
-                            <span class="tag">SEO</span>
-                            <span class="tag">Responsive Design</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">HTML</span>
-                            <span class="tag">Flexbox</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="">
-                        <div class="column">
-                            <figure class="image is-16x9">
-                                <img id="csImages" data-index="0" src="img/cs_grid.png">
-                            </figure>
-                        </div>
+                        <figure class="">
+                            <img id="rsImages" data-index="0" src="img/rs_onboarding.png">
+                        </figure>
                     </div>
                 </div>
             </div>
-            <div class="columns is-centered is-desktop">
-                <div class="column is-two-fifths-desktop">
-                    <div class="box">
-                        <div class="content">
-                            <h2>Syncline</h2>
-                            <div class="buttons is-centered has-addons">
-                                <a class="button" href="http://syncline.herokuapp.com/" target="_blank">
-                                    <span class="icon is-small">
-                                        <i class="fa fa-external-link-alt"></i>
-                                    </span>
-                                    <span>Link</span>
-                                </a>
-                                <a class="button" href="https://github.com/scottcaldwell/Syncline" target="_blank">
-                                    <span class="icon is-small">
-                                        <i class="fa fa-code"></i>
-                                    </span>
-                                    <span>Code</span>
-                                </a>
-                            </div>
-                            <p class="has-text-left is-size-7-mobile">A tool aimed at geotechnical engineers to streamline the process of collecting, reviewing and
-                                approving site investigation information. This is an early proof of concept developed as
-                                a final project at Lighthouse Labs. This was a team project developed over the course of
-                                two weeks. This project taught me about designing a database schema, writing detailed user
-                                stories, creating a secure app with Ruby on Rails, JavaScript animations, git branching in
-                                a team environment, and using external APIs.
-                            </p>
-                        </div>
-                        <div class="tags">
-                            <span class="tag">Ruby on Rails</span>
-                            <span class="tag">Javascript</span>
-                            <span class="tag">JQuery</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Mapbox</span>
-                            <span class="tag">Handlebars.js</span>
-                            <span class="tag">HTML Canvas</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">HTML</span>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="">
+            <div class="">
                 <div class="">
                     <div class="">
-                        <div class="column">
-                            <figure class="image is-16x9">
-                                <img id="syncImages" data-index="0" src="img/syncline_login.png">
-                            </figure>
+                        <h2>Cameron Sparling Photography</h2>
+                        <div class="">
+                            <a class="button" href="http://cameronsparling.com" target="_blank">
+                                <span class="icon">
+                                    <i class="fa fa-external-link-alt"></i>
+                                </span>
+                                <span>Link</span>
+                            </a>
+                            <a class="button" onclick="showNote(this)">
+                                <span class="icon">
+                                    <i class="fa fa-code"></i>
+                                </span>
+                                <span>Code</span>
+                            </a>
                         </div>
+                        <p class="">Check source in Link, code not obfuscated.</p>
+                        <p class="">A responsive portfolio made for fashion photographer Cameron Sparling. This project taught me
+                            about UI/UX, hosting with Amazon S3, setting up a private email, designing for a client,
+                            SEO and responsive design.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">AngularJS</span>
+                        <span class="tag">Amazon S3</span>
+                        <span class="tag">SEO</span>
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">Flexbox</span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <div class="column">
+                        <figure class="image is-16x9">
+                            <img id="csImages" data-index="0" src="img/cs_grid.png">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-centered is-desktop">
+            <div class="column is-two-fifths-desktop">
+                <div class="box">
+                    <div class="content">
+                        <h2>Syncline</h2>
+                        <div class="buttons is-centered has-addons">
+                            <a class="button" href="http://syncline.herokuapp.com/" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="fa fa-external-link-alt"></i>
+                                </span>
+                                <span>Link</span>
+                            </a>
+                            <a class="button" href="https://github.com/scottcaldwell/Syncline" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="fa fa-code"></i>
+                                </span>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                        <p class="has-text-left is-size-7-mobile">A tool aimed at geotechnical engineers to streamline the process of collecting, reviewing and
+                            approving site investigation information. This is an early proof of concept developed as
+                            a final project at Lighthouse Labs. This was a team project developed over the course of
+                            two weeks. This project taught me about designing a database schema, writing detailed user
+                            stories, creating a secure app with Ruby on Rails, JavaScript animations, git branching in
+                            a team environment, and using external APIs.
+                        </p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Ruby on Rails</span>
+                        <span class="tag">Javascript</span>
+                        <span class="tag">JQuery</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Mapbox</span>
+                        <span class="tag">Handlebars.js</span>
+                        <span class="tag">HTML Canvas</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">HTML</span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                    <div class="column">
+                        <figure class="image is-16x9">
+                            <img id="syncImages" data-index="0" src="img/syncline_login.png">
+                        </figure>
                     </div>
                 </div>
             </div>
