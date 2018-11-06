@@ -1,27 +1,10 @@
 'use strict';
 
-// var mySwiper = new Swiper ('.swiper-container', {
-//     // Optional parameters
-//     // direction: 'vertical',
-//     preloadImages: false,
-//     // Enable lazy loading
-//     lazy: true,
-
-//     loop: true,
-
-//     // And if we need scrollbar
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     },
-// })
-
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity(elem, {
-  // options
-  //   cellAlign: 'center',
-  //   contain: true,
-  prevNextButtons: false
-  //   fullScreen: true
+var carouselElements = document.querySelectorAll('.carousel');
+carouselElements.forEach(function (carouselElement) {
+  new Flickity(carouselElement, {
+    prevNextButtons: false
+  });
 });
 
 var captureMouse = function captureMouse(element) {
@@ -55,10 +38,6 @@ var captureMouse = function captureMouse(element) {
   return mouse;
 };
 
-//Mouse listener - get percentage across screen x and y
-//Get element with mouse tilt
-//translateX(-5% to 5%)
-//translateY(-5% to 5%)
 var tiltElement = document.getElementById('tilt');
 var mouse = captureMouse(tiltElement);
 
@@ -70,7 +49,6 @@ tiltElement.addEventListener('mousemove', function () {
   var tiltX = (percentX / 10 - 5).toFixed(2);
   var tiltY = (percentY / 10 - 5).toFixed(2);
   tiltElement.style = "transform: rotateY(" + tiltX + "deg) rotateX(" + tiltY + "deg)";
-  console.log("x: " + tiltX + ", y: " + tiltY);
 }, false);
 
 // Hero background canvas

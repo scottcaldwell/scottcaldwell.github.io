@@ -1,29 +1,11 @@
-'use strict';
-
-// var mySwiper = new Swiper ('.swiper-container', {
-//     // Optional parameters
-//     // direction: 'vertical',
-//     preloadImages: false,
-//     // Enable lazy loading
-//     lazy: true,
-
-//     loop: true,
-
-//     // And if we need scrollbar
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     },
-// })
-
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-//   cellAlign: 'center',
-//   contain: true,
-  prevNextButtons: false,
-//   fullScreen: true
+const carouselElements = document.querySelectorAll('.carousel');
+carouselElements.forEach(carouselElement => {
+    new Flickity( carouselElement, {
+        prevNextButtons: false,
+    });
 });
 
+  
 
 let captureMouse = function (element) {
   let mouse = {x: 0, y: 0, event: null},
@@ -56,10 +38,6 @@ let captureMouse = function (element) {
 };
 
 
-//Mouse listener - get percentage across screen x and y
-//Get element with mouse tilt
-//translateX(-5% to 5%)
-//translateY(-5% to 5%)
 const tiltElement = document.getElementById('tilt');
 const mouse = captureMouse(tiltElement);
 
@@ -71,7 +49,6 @@ tiltElement.addEventListener('mousemove', () => {
     let tiltX = ( ( percentX / 10 ) - 5 ).toFixed(2);
     let tiltY = ( ( percentY / 10 ) - 5 ).toFixed(2);
     tiltElement.style = "transform: rotateY(" + tiltX + "deg) rotateX(" + tiltY + "deg)";
-    console.log("x: " + tiltX + ", y: " + tiltY);
 }, false);
 
 

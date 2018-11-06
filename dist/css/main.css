@@ -103,6 +103,9 @@ section {
   background: #f8f8f8;
   opacity: 1; }
 
+.carousel {
+  margin-bottom: 24px; }
+
 .carousel-cell {
   width: 100%;
   /* full width */
