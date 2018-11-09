@@ -3,25 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     &__content{
         text-align: center;
     }
 
     &__image{
-
-    }
-
-    &__title{
-
-    }
-
-    &__subtitle{
-
-    }
-
-    &__bio{
-
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
     }
 }
 
@@ -45,6 +36,23 @@
     opacity: 1;
 }
 
+.exp-container{
+
+}
+
+.exp{
+
+    &__companies{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            max-height: 24px;
+        }
+    }
+}
 // Flickity carousel additional styling
 .carousel{
     margin-bottom: 24px;
