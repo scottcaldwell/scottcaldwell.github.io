@@ -1,30 +1,47 @@
 
-$sans: 'Open Sans', sans-serif;
-$serif: 'Sorts Mill Goudy', serif;
+/* =============================================================================
+Typography
+============================================ */
+$sans: 'Lato', sans-serif;
+$serif: 'Lora', serif;
 
 body{
     font-family: $serif;
     font-size: 16px;
-    color: $black;
+    color: $blue;
 }
 
 .h1, h1{
-    font-size: 24px;
+    font-size: 32px;
+    @include for-tablet-portrait-up{
+        font-size: 48px;
+    }
+}
+
+.h2, h2{
+    font-size: 26px;
+    margin-bottom: 16px;
+    position: relative;
+
+    &:after{
+        // content: "";
+        position: absolute;
+        top:auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        background: $blue;
+        transform: scaleX(50%);
+    }
+
     @include for-tablet-portrait-up{
         font-size: 32px;
     }
 }
 
-.h2, h2{
-
-}
-
 .h3, h3{
-
-}
-
-.h4, h4{
-
+    margin-bottom: 8px;
 }
 
 .h5, h5{
@@ -32,9 +49,6 @@ body{
     text-transform: uppercase;
 }
 
-p{
-
-}
 
 a{
     text-decoration: none;

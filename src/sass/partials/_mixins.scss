@@ -1,3 +1,6 @@
+/* =============================================================================
+Mixins
+============================================ */
 @mixin for-phone-only {
     @media (max-width: 599px) { @content; }
   }
@@ -20,7 +23,6 @@
   transition-timing-function: $timing-function;
   transition-delay: $delay;
 }
-
 
 @mixin animate($name, $duration: 1s, $timing-function: ease, $delay: 0s) {
   animation-name: $name;

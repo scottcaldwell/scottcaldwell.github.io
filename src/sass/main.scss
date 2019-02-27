@@ -1,11 +1,15 @@
+/* =============================================================================
+Partial Imports
+============================================ */
 @import "partials/reset";
 @import "partials/mixins";
-
 @import "partials/colors";
 @import "partials/typography";
+@import "partials/buttons";
+@import "partials/carousel";
 @import "partials/layout";
-
-@import "partials/header";
+@import "partials/hero";
+@import "partials/footer";
 @import "partials/homepage";
 
 
