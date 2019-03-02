@@ -3,15 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#000">
+        <meta name="theme-color" content="#1C1D21">
         <meta name="description" content="Scott Caldwell is a Vancouver-based Front End Developer" />
         <meta name="keywords" content="Scott Caldwell, Front End Developer, portfolio, Vancouver developer" />
         <meta name="robots" content="index,follow" />
         <meta property="og:title" content="Scott Caldwell Portfolio" />
-        <meta property="og:type" content="video.movie" />
         <meta property="og:url" content="https://scottcaldwell.github.io" />
         <meta property="og:image" content="images/galleries/portrait.jpg" />
-        <title id="title">Scott Caldwell</title>
+        <title>Scott Caldwell</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Lora" rel="stylesheet">        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -23,22 +22,22 @@
     <div id="heroFade"></div>
     <div id="footerFade"></div>
     <section class="hero" id="hero">
-        <canvas id="canvas"></canvas>
         <div class="hero__content">
             <img class="hero__image" src="images/galleries/portrait.jpg" alt="Portrait of Scott Caldwell">
             <h1 class="hero__name">Scott Caldwell</h1>
             <h2 class="hero__title">Front End Web Developer</h2>
             <div class="hero__subtitle">
-                <!-- Get map marker icon -->
                 <h3>Vancouver, BC</h3>
             </div>
             <p class="hero__bio">Rewrite this or leave out completely. User Experience, Accessibility as a priority, </p>
-            <button class="primary-button">Email Me</button>
+            <a class="button primary-button" href="mailto:ScottC.Caldwell@gmail.com">Email Me</a>
         </div>
     </section>
-
     <section class="exp-container container">
         <h2>Experience</h2>
+        <div class="separator">
+            <hr>
+        </div>
         <!-- Redstamp Digital Agency -->
         <div class="exp">
             <div class="exp__icon">
@@ -75,6 +74,11 @@
                             <img src="images/logos/clever-logo.png" alt="Clever logo">
                         </a>
                     </div>
+                    <div class="exp__companies__logo">
+                        <a href="https://sproutly.ca/">
+                            <img src="images/logos/sproutly-logo.png" alt="Sproutly logo">
+                        </a>
+                    </div>
                 </div>
                 <div class="carousel">
                     <div class="carousel-cell">
@@ -82,7 +86,6 @@
                     </div>
                     <div class="carousel-cell">
                         <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/heap_screenshot.png" alt="Screenshot of heapanalytics.com">
-
                     </div>
                     <div class="carousel-cell">
                         <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/constructor_screenshot.png" alt="Screenshot of constructor.io">
@@ -93,8 +96,8 @@
         <!-- RewardStream Solutions -->
         <div class="exp">
             <div class="exp__icon">
-                    <img src="images/logos/rewardstream-logo.png" alt="Redstamp Logo">
-                </div>
+                <img src="images/logos/rewardstream-logo.png" alt="Redstamp Logo">
+            </div>
             <div class="exp__content">
                 <h3 class="exp__header">RewardStream</h3>
                 <h4 class="exp__subheader">
@@ -103,44 +106,48 @@
                 </h4>
                 <div class="exp__companies">
                     <div class="exp__companies__logo">
-                            <a href="">
-                                <img src="images/logos/telus-logo.png" alt="Telus logo">
-                            </a>
-                        </div>
-                        <div class="exp__companies__logo">
-                            <a href="">
-                                <img src="images/logos/rogers-logo.png" alt="Rogers logo">
-                            </a>
-                        </div>
-                        <div class="exp__companies__logo">
-                            <a href="">
-                                <img src="images/logos/virgin-mobile-logo.png" alt="Virgin Mobile logo">
-                            </a>
-                        </div>
-                        <div class="exp__companies__logo">
-                            <a href="">
-                                <img src="images/logos/sprint-logo.png" alt="Sprint logo">
-                            </a>
-                        </div>
-                        <div class="exp__companies__logo">
-                            <a href="">
-                                <img src="images/logos/koodo-logo.png" alt="Koodo logo">
-                            </a>
-                        </div>
+                        <a href="https://www.telus.com/en/mobility/content/refer-a-friend">
+                            <img src="images/logos/telus-logo.png" alt="Telus logo">
+                        </a>
                     </div>
-                    <div class="carousel">
-                        <div class="carousel-cell">
-                            <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/rs_onboarding.png" alt="Screenshot of RewardStream onobarding tool">
-                        </div>
-                        <div class="carousel-cell">
-                            <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/rs_campaigns.png" alt="Screenshot of RewardStream campaigns page">
-                        </div>
-                        <div class="carousel-cell">
-                            <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/rs_content_editor.png" alt="Screenshot of RewardStream campaign editor">
-                        </div>
-                        <div class="carousel-cell">
-                            <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/rs_social.png" alt="Screenshot of RewardStream social share tool">
-                        </div>
+                    <div class="exp__companies__logo">
+                        <a href="https://rogers.sparkrefer.com/public/home.pg">
+                            <img src="images/logos/rogers-logo.png" alt="Rogers logo">
+                        </a>
+                    </div>
+                    <div class="exp__companies__logo">
+                        <a href="https://www.virginmobile.ca">
+                            <img src="images/logos/virgin-mobile-logo.png" alt="Virgin Mobile logo">
+                        </a>
+                    </div>
+                    <div class="exp__companies__logo">
+                        <a href="https://refer.sprint.com/public/home.pg">
+                            <img src="images/logos/sprint-logo.png" alt="Sprint logo">
+                        </a>
+                    </div>
+                    <div class="exp__companies__logo">
+                        <a href="https://referafriend.koodomobile.com/public/home.pg?lang=en">
+                            <img src="images/logos/koodo-logo.png" alt="Koodo logo">
+                        </a>
+                    </div>
+                    <div class="exp__companies__logo">
+                        <a href="https://refer.freedommobile.ca/public/home.pg">
+                            <img src="images/logos/freedom-logo.png" alt="Freedom Mobile logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/rs_onboarding.png" alt="Screenshot of RewardStream onobarding tool">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/rs_campaigns.png" alt="Screenshot of RewardStream campaigns page">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/rs_content_editor.png" alt="Screenshot of RewardStream campaign editor">
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="carousel-cell-image" data-flickity-lazyload="images/galleries/rs_social.png" alt="Screenshot of RewardStream social share tool">
                     </div>
                 </div>
             </div>  
@@ -148,14 +155,12 @@
         <!-- Cameron Sparling Photography -->
         <div class="exp">
             <div class="exp__icon">
-
+                <img src="images/logos/cameron-sparling-logo.png" alt="Cameron Sparling Logo">
             </div>
             <div class="exp__content">
                 <h3 class="exp__header">Cameron Sparling Photography</h3>
                 <h4 class="exp__subheader">
-                    A responsive portfolio made for fashion photographer Cameron Sparling. This project taught me
-                    about UI/UX, hosting with Amazon S3, setting up a private email, designing for a client,
-                    SEO and responsive design.
+                    A responsive portfolio designed and developed for fashion photographer Cameron Sparling. An AngularJS app, statically hosted with Amazon S3.
                 </h4>
                 <div class="carousel">
                     <div class="carousel-cell">
@@ -173,12 +178,14 @@
         <!-- Syncline -->
         <div class="exp">
             <div class="exp__icon">
-
+                <img src="images/logos/syncline-logo.png" alt="Syncline Logo">
             </div>
             <div class="exp__content">
                 <h3 class="exp__header">Syncline</h3>
                 <h4 class="exp__subheader">
-                        A tool aimed at geotechnical engineers to streamline the process of collecting, reviewing and approving site investigation information. This is an early proof of concept developed as a final project at Lighthouse Labs. This was a team project developed over the course of two weeks. This project taught me about designing a database schema, writing detailed user stories, creating a secure app with Ruby on Rails, JavaScript animations, git branching in a team environment, and using external APIs.
+                        A tool aimed at geotechnical engineers to streamline the process of collecting, 
+                        reviewing and approving site investigation information. 
+                        This is an early proof of concept developed over two weeks as a final project at Lighthouse Labs. 
                 </h4>
                 <div class="carousel">
                     <div class="carousel-cell">
@@ -203,6 +210,9 @@
 
     <section class="skills container">
         <h2 class="skills__header">Toolkit</h2>
+        <div class="separator">
+            <hr>
+        </div>
         <ul class="skills__list">
             <li class="skills__list__item">
                 <i class="devicon-javascript-plain"></i>
@@ -229,12 +239,20 @@
                 <span>SASS(BEM)</span>
             </li>
             <li class="skills__list__item">
+                <i class="devicon-bootstrap-plain"></i>
+                <span>Bootstrap</span>
+            </li>
+            <li class="skills__list__item">
                 <i class="devicon-wordpress-plain"></i>
                 <span>WordPress</span>
             </li>
             <li class="skills__list__item">
                 <i class="devicon-postgresql-plain"></i>
                 <span>PostgreSQL</span>
+            </li>
+            <li class="skills__list__item">
+                <i class="devicon-mysql-plain"></i>
+                <span>MySQL</span>
             </li>
             <li class="skills__list__item">
                 <i class="devicon-grunt-plain"></i>
@@ -265,9 +283,17 @@
 
     <footer class="footer" id="footer">
         <div class="footer__links">
+            <a class="button secondary-button" href="mailto:ScottC.Caldwell@gmail.com">Email Me</a>
+            <a class="button secondary-button" href="pdfs/Scott_Caldwell_Resume_2019.pdf" target="_blank">Resume</a>
+            <a class="button secondary-button" href="https://github.com/scottcaldwell/" target="_blank">Github</a>
+            <a class="button secondary-button" href="https://codepen.io/scottcaldwell/" target="_blank">Codepen</a>
+        </div>
+        <div class="separator separator--white">
+            <hr>
         </div>
         <div class="footer__copyright">
-            <span>© 2019 | Scott Caldwell</span>
+            <div>Scott Caldwell</div>
+            <div>©2019</div>
         </div>
     </footer>
 </body>

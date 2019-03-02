@@ -4,22 +4,27 @@ Flickity Carousel
 
 .carousel{
     margin-bottom: 24px;
+    border: 1px solid $black;
+    border-radius: 1px;
 }
 .carousel-cell {
-    width: 100%; /* full width */
-    background: #222;
-    /* center images in cells with flexbox */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .carousel.is-fullscreen .carousel-cell {
+}
+
+.carousel.is-fullscreen .carousel-cell {
     height: 100%;
-  }
-  
-  .carousel-cell img {
+}
+
+.carousel-cell img {
     display: block;
     max-height: 100%;
     width: 100%;
-  }
+}
+
+.carousel .flickity-page-dots .dot {
+    border-radius: 2px;
+    border: 2px solid $black;
+}

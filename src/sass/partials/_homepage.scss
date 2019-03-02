@@ -21,7 +21,7 @@ Homepage
     z-index: -1;
 }
 #heroFade{
-    background: rgba($light-green, 0.6);
+    background: rgba($light-green, 0.4);
     opacity: 1;
 }
 #footerFade{
@@ -29,14 +29,9 @@ Homepage
     opacity: 0;
 }
 
-#canvas{
-    position: absolute;
-    top: 50%;
-    right: 50%;
-}
-
 .exp-container{
     margin-bottom:32px;
+    margin-top:32px;
 
     h2{
         text-align: center;
@@ -51,6 +46,7 @@ Homepage
         display: flex;
         justify-content: center;
         margin-bottom: 8px;
+        padding: 0px 16px 40px;
 
         img{
             top: 5px;
@@ -71,10 +67,15 @@ Homepage
     &__content{
         text-align: center;
         margin-bottom: 48px;
+        @include for-tablet-portrait-up{
+            text-align: left;
+            padding: 0px 16px;
+        }
     }
 
     &__subheader{
         margin-bottom: 16px;
+        text-align: left;
     }
 
     &__companies{
@@ -89,13 +90,16 @@ Homepage
             flex-basis: auto;
             display: inline-block;
             padding: 16px;
+            text-align: center;
+            min-width: 120px;
+
             img{
                 max-height: 24px;
                 height: auto;
                 width: auto;
                 filter: gray;
                 filter: grayscale(1); 
-                opacity: 0.8;
+                opacity: 0.7;
 
                 &:hover{
                     filter: none;
@@ -113,6 +117,9 @@ Homepage
     }
     &__description{
         display: none;
+    }
+    @include for-tablet-portrait-up{
+        flex-direction: row;
     }
 }
 
@@ -138,10 +145,52 @@ Homepage
         i{
             font-size: 64px;
             margin-bottom: 8px;
-            color: $blue;
+            color: $black;
         }
     }
 }
 
+.separator{
+    position: relative;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 300px;
+
+    hr{
+        width: 100%;
+        height: 2px;
+        border-radius: 10px;
+        background: black;
+        display: block;
+        border: 0;
+        margin: 0;
+
+        &:after, &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 14px;
+            border-radius: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+            background: $black;
+            width: 2px;
+        }
+
+        &:after{
+            left:0;
+        }
+        &:before{
+            right:0;
+        }
+    }
+
+    &--white{
+        hr, hr:after, hr:before{
+            background: $white;
+        }
+    }
+}
 
 
