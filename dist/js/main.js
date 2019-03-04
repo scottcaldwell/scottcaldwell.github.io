@@ -5,9 +5,9 @@ carouselElements.forEach(function (carouselElement) {
     var flkty = new Flickity(carouselElement, {
         prevNextButtons: false,
         lazyLoad: true
-
     });
-    //resize to prevent translateX bug pn flickty container
+
+    //resize to prevent translateX bug on flickty container
     setTimeout(function () {
         flkty.resize();
     }, 100);
@@ -37,6 +37,7 @@ function createObservers() {
         rootMargin: "0px",
         threshold: buildThresholdList()
     };
+
     var footerOptions = {
         root: null,
         rootMargin: "0px",
@@ -51,7 +52,7 @@ function createObservers() {
 
 function buildThresholdList() {
     var thresholds = [];
-    var numSteps = 100;
+    var numSteps = 30;
 
     for (var i = 1.0; i <= numSteps; i++) {
         var ratio = i / numSteps;
