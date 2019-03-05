@@ -21,8 +21,12 @@ Hero
         max-width: 600px;
         border-radius: 1px;
         box-shadow: rgba(116, 83, 83, 0.05) 0px 4px 8px 0px, rgba(0, 0, 0, 0.05) 0px 6px 20px 0px;
-        margin-bottom: 48px;
         border: 1px solid $black;
+        margin-bottom: 16px;
+        @include for-tablet-portrait-up{
+
+            margin-bottom: 48px;
+        }
 
     }
 
