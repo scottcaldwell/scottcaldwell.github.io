@@ -46,8 +46,7 @@ Homepage
         display: flex;
         justify-content: center;
         margin-bottom: 8px;
-        padding: 0px 16px 40px;
-
+        padding: 16px 0;
         img{
             top: 5px;
             bottom: 5px;
@@ -58,6 +57,7 @@ Homepage
         @include for-tablet-portrait-up{
             display: block;
             margin-bottom: 0px;
+            padding: 0px 16px 40px;
 
             img{
                 position: sticky;
@@ -74,8 +74,11 @@ Homepage
     }
 
     &__subheader{
-        margin-bottom: 16px;
-        text-align: left;
+        margin-bottom: 32px;
+        
+        @include for-tablet-portrait-up{
+            text-align: left;
+        }
     }
 
     &__companies{
@@ -124,6 +127,8 @@ Homepage
 }
 
 .skills{
+    margin-bottom: 32px;
+    margin-top: 32px;
     &__header{
         text-align: center;
     }

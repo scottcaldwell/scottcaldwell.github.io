@@ -31,7 +31,9 @@ Hero
     }
 
     &__bio{
-        margin-bottom: 32px;
+        max-width: 500px;
+        margin: 0px auto 32px;
+        padding: 0 16px;
     }
 
     @include for-tablet-portrait-up{

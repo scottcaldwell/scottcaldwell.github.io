@@ -17,11 +17,12 @@ button,
     user-select: none;
     cursor: pointer;
     height: 48px;
-    padding: 0 32px 2px;
+    padding: 0 16px;
     border-radius: 1px;
     font-family: $serif;
     font-size: 18px;
     font-weight: 700;
+
 }
 
 /* =================================================
@@ -31,14 +32,32 @@ Primary Button
 .primary-button{
     background-color: transparent;
     color: $black;
-    border: 1px solid $black;
+    border-bottom: 2px solid $black;
     @extend %button;
-    transition: background 0.3s ease-out, color 0.3s ease-out;
+    transition: padding 0.2s ease-out, opacity 0.2s ease-out;
     position: relative;
 
-    &:hover {
+    &:after, &:before{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        height: 7px;
+        border-radius: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
         background: $black;
-        color: $white;
+        width: 2px;
+    }
+
+    &:after{
+        left:0;
+    }
+    &:before{
+        right:0;
+    }
+    &:hover {
+        padding: 0 20px;
+        opacity: 0.8;
     }
 } 
 
@@ -51,13 +70,31 @@ Secondary Button
 .secondary-button{
     background-color: transparent;
     color: $white;
-    border: 1px solid $white;
+    border-bottom: 2px solid $white;
     @extend %button;
-    transition: background 0.3s ease-out, color 0.3s ease-out;
+    transition: padding 0.2s ease-out, opacity 0.2s ease-out;
     position: relative;
 
-    &:hover {
+    &:after, &:before{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        height: 7px;
+        border-radius: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
         background: $white;
-        color: $black;
+        width: 2px;
+    }
+
+    &:after{
+        left:0;
+    }
+    &:before{
+        right:0;
+    }
+    &:hover {
+        padding: 0 20px;
+        opacity: 0.8;
     }
 } 
