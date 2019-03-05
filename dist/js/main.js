@@ -687,7 +687,6 @@ var carouselElements = document.querySelectorAll('.carousel');
 carouselElements.forEach(function (carouselElement) {
     var flkty = new Flickity(carouselElement, {
         prevNextButtons: false
-        // lazyLoad: true
     });
 
     //resize to prevent translateX bug on flickty container

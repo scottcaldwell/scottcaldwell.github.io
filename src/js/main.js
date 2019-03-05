@@ -3,7 +3,6 @@ const carouselElements = document.querySelectorAll('.carousel');
 carouselElements.forEach(carouselElement => {
     var flkty = new Flickity( carouselElement, {
         prevNextButtons: false,
-        // lazyLoad: true
     });
 
     //resize to prevent translateX bug on flickty container
