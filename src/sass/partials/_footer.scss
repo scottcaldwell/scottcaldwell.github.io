@@ -1,0 +1,29 @@
+/* =============================================================================
+Footer
+============================================ */
+
+
+.footer{
+    color: $white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        a{
+            margin-bottom: 16px;
+            align-self: center;
+            
+        }
+    }
+    &__copyright{
+        div{
+            margin-bottom: 8px;
+        }
+        text-align: center;
+    }
+}

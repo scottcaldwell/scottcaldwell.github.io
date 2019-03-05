@@ -1,0 +1,100 @@
+/* =============================================================================
+Buttons
+============================================================================= */
+
+/* =================================================
+Shared button styles
+=================================================== */
+
+button, 
+.button,
+%button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 1px;
+    font-family: $serif;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+/* =================================================
+Primary Button
+=================================================== */
+
+.primary-button{
+    background-color: transparent;
+    color: $black;
+    border-bottom: 2px solid $black;
+    @extend %button;
+    transition: padding 0.2s ease-out, opacity 0.2s ease-out;
+    position: relative;
+
+    &:after, &:before{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        height: 7px;
+        border-radius: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: $black;
+        width: 2px;
+    }
+
+    &:after{
+        left:0;
+    }
+    &:before{
+        right:0;
+    }
+    &:hover {
+        padding: 0 20px;
+        opacity: 0.8;
+    }
+} 
+
+
+
+/* =================================================
+Secondary Button
+=================================================== */
+
+.secondary-button{
+    background-color: transparent;
+    color: $white;
+    border-bottom: 2px solid $white;
+    @extend %button;
+    transition: padding 0.2s ease-out, opacity 0.2s ease-out;
+    position: relative;
+
+    &:after, &:before{
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        height: 7px;
+        border-radius: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: $white;
+        width: 2px;
+    }
+
+    &:after{
+        left:0;
+    }
+    &:before{
+        right:0;
+    }
+    &:hover {
+        padding: 0 20px;
+        opacity: 0.8;
+    }
+} 

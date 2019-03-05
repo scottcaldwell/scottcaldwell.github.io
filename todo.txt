@@ -1,0 +1,18 @@
+CODE----------
+Add flickity slider
+
+CONTENT---------
+Remove NHL recap
+Add redstamp - GIFs of animations
+
+STYLE---------
+Fade-in footer
+
+Intro-------
+Rewrite intro
+
+Skills-----
+Add - Wordpress, Gulp, BEM
+
+
+
